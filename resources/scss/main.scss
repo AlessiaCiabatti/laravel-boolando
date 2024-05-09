@@ -1,0 +1,12 @@
+// prendo le variabili
+
+// senza underscore
+@use './partials/general';
+
+// import va sempre scritto dopo @use
+// import font da node_modules
+@import '@fontsource/roboto/index.css'
+
+// tutte e due importano il file, se importi tramite use che a sua volta viene importato da un altro: general @use variabili, main non vede le variabili
+// import vengono importati globalmente
+// general include le variabili m anel main non posso leggerle anche se ho importato general se uso @use
