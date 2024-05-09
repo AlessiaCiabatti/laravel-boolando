@@ -3,11 +3,15 @@
 @section('content')
 
 <div class="container">
-    <div class="prodotto-uno">
-        <img src="/img/1.webp" alt="">
-    </div>
+
+
+    @foreach ($products as $product)
 
     <div class="prodotto-uno">
+        <img src="{{ $product['frontImage'] }}" alt="">
+    </div>
+
+    {{-- <div class="prodotto-uno">
         <img src="/img/2.webp" alt="">
     </div>
 
@@ -25,7 +29,8 @@
 
     <div class="prodotto-uno">
         <img src="/img/6.webp" alt="">
-    </div>
+    </div> --}}
+    @endforeach
 </div>
 
 @endsection
