@@ -5,13 +5,16 @@
         <div class="menu">
           <ul>
             <li>
-                <a href="#">Uomo</a>
+                <a href="{{ route('home') }}">Home</a>
+              </li>
+            <li>
+                <a href="{{ route('uomo') }}">Uomo</a>
               </li>
               <li>
-                <a href="#">Donna</a>
+                <a href="{{ route('donna') }}">Donna</a>
               </li>
               <li>
-                <a href="#">Bambino</a>
+                <a href="{{ route('bambino') }}">Bambino</a>
               </li>
           </ul>
         </div>
