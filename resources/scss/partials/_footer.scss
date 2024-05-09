@@ -1,0 +1,44 @@
+
+.container-footer{
+    // background-color: #1a1a1a;
+    background-color: $bg-footer;
+    height: 80px;
+
+    .text-footer{
+      max-width: 1030px;
+      height: 80px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .boolando{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .menu a{
+        font-size: 11px;
+      }
+      .social{
+        display: flex;
+        align-items: center;
+      }
+      .trovaci{
+        color: white;
+        display: flex;
+        flex-direction: column;
+      }
+
+    }
+  }
+
+  .social{
+    h4{
+      font-size: 11px;
+      padding-bottom: 6px;
+    }
+    .fa-brands{
+      padding-right: 5px;
+    }
+  }

@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1030px;
+    margin: 50px auto;
+    }
+
+.prodotto-uno {
+  position: relative;
+  height: 530px;
+  width: 335px;
+  margin-bottom: 20px;
+  .badges{
+    position: absolute;
+    bottom: 65px;
+    color: white;
+    // color: $writen-color;
+    z-index: 1;
+  }
+  img{
+    width: 100%;
+  }
+  .img-none{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+  }
+  .heart{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 20px;
+    // background-color: white;
+    background-color: $writen-color;
+    padding: 5px 10px;
+  }
+}
+
+span.discount{
+//   background-color: red;
+  background-color: $heart-color;
+  padding: 3px 8px;
+}
+
+span.tag{
+//   background-color: green;
+  background-color: $sostenibile-g;
+  padding: 3px 8px;
+  margin-right: 10px;
+}
+
+// .prodotto-uno .heart:hover{
+//   color: #ff0000;
+//   cursor: pointer;
+// }
+
+
+.prodotto-uno:hover .img-none{
+  display: inline-block;
+}

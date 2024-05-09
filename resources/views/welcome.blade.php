@@ -10,6 +10,8 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+    {{-- elemento sempre presente nel template comuhnica con app.js e prende gli stili scss --}}
+    {{-- quando noi creiamo layout dobbiamo riportare questo elemento nella head del leyout--}}
     <!-- Styles -->
     @vite('resources/js/app.js')
 
