@@ -2,19 +2,23 @@
     <div class="container-header">
       <div class="nav">
 
+
         <div class="menu">
           <ul>
             <li>
-                <a href="{{ route('home') }}">Home</a>
+                <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
               </li>
+
             <li>
-                <a href="{{ route('uomo') }}">Uomo</a>
+                <a class="{{ Route::currentRouteName() === 'uomo' ? 'active' : '' }}" href="{{ route('uomo') }}">Uomo</a>
               </li>
+
               <li>
-                <a href="{{ route('donna') }}">Donna</a>
+                <a class="{{ Route::currentRouteName() === 'donna' ? 'active' : '' }}" href="{{ route('donna') }}">Donna</a>
               </li>
+
               <li>
-                <a href="{{ route('bambino') }}">Bambino</a>
+                <a class="{{ Route::currentRouteName() === 'bambino' ? 'active' : '' }}" href="{{ route('bambino') }}">Bambino</a>
               </li>
           </ul>
         </div>
